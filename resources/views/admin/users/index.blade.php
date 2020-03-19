@@ -2,7 +2,19 @@
 
 @section('content')
 
-<h1> USERS </h1>
+@if(Session::has('created_user'))
+    <h4 class="bg-success text-center">{{session('created_user')}}</h4>
+@endif
+
+@if(Session::has('updated_user'))
+    <h4 class="bg-warning p-1 text-center">{{session('updated_user')}}</h4>
+@endif
+
+@if(Session::has('deleted_user'))
+    <h4 class="bg-danger text-center">{{session('deleted_user')}}</h4>
+@endif
+
+<h1> Users </h1>
 
 <table class="table">
     <thead>
