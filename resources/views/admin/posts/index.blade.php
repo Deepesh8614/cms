@@ -9,7 +9,7 @@
         <tr>
             <th>ID</th>
             <th>Owner</th>
-            <th>Category_ID</th>
+            <th>Category</th>
             <th>Photo</th>
             <th>Title</th>
             <th>Content</th>
@@ -24,7 +24,7 @@
             <tr>
                 <td>{{$post->id}}</td>
                 <td>{{$post->user->name}}</td>
-                <td>{{$post->category_id}}</td>
+                <td>{{$post->category->name}}</td>
                 <td><img height="50" src="{{$post->photo->file}}" alt="No Photo" /></td>
                 <td>{{$post->title}}</td>
                 <td>{{$post->content}}</td>
